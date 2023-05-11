@@ -17,7 +17,7 @@ pipeline {
     stage('Unit tests') {
       steps {
         // Ejecutar las pruebas unitarias del proyecto
-        sh 'python -m unittest discover -s . -p "test_calculator.py"'
+        sh 'python3 -m unittest discover -s . -p "test_calculator.py"'
       }
     }
     
