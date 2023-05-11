@@ -3,7 +3,7 @@ pipeline {
   
   triggers {
     // Configurar el disparador para ejecutar la canalización automáticamente en caso de cualquier commit en el repositorio
-    scm('* * * * *')
+    pollSCM('* * * * *')
   }
   
   stages {
