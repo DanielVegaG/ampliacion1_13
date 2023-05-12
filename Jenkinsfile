@@ -30,10 +30,14 @@ pipeline {
     
     stage('Code Coverage') {
       steps {
-        // Generar el informe de cobertura de código usando herramientas como coverage.py
+      // Instalar las dependencias necesarias para coverage.py
+        sh 'pip install coverage'
+
+        // Generar el informe de cobertura de código usando coverage.py
         sh 'coverage run --source=calculadora -m unittest discover -s . -p "test_calculator.py"'
         sh 'coverage report -m'
       }
     }
+
   }
 }
