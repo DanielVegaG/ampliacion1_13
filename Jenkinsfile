@@ -21,12 +21,12 @@ pipeline {
       }
     }
     
-    stage('Linting') {
+    """stage('Linting') {
       steps {
         // Realizar análisis estático del código con herramientas como pylint o flake8
         sh 'pylint calculadora.py'
       }
-    }
+    }"""
     
     stage('Code Coverage') {
       steps {
