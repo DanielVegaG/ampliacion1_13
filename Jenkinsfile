@@ -9,10 +9,10 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        // Clonar el repositorio en el directorio de trabajo
-        checkout scm
+        git 'https://github.com/DanielVegaG/ampliacion1_13.git'
       }
     }
+
     
     stage('Unit tests') {
       steps {
