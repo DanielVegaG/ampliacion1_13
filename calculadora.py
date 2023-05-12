@@ -1,7 +1,18 @@
 import sys
 
-def multiplicar(a, b):
-    return a * b
+'''Este módulo contiene funciones para realizar operaciones de multiplicación.'''
+def multiplicar(primer_valor, segundo_valor):
+    """
+    Multiplica dos números y devuelve el resultado.
+
+    Args:
+        primer_valor (float): Primer número para multiplicar.
+        segundo_valor (float): Segundo número para multiplicar.
+
+    Returns:
+        float: Resultado de la multiplicación.
+    """
+    return primer_valor * segundo_valor
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
