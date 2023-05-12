@@ -1,8 +1,8 @@
 import sys
 
-'''Este módulo contiene funciones para realizar operaciones de multiplicación.'''
+"""Este módulo contiene funciones para realizar operaciones de multiplicación."""
 def multiplicar(primer_valor, segundo_valor):
-    """
+    '''
     Multiplica dos números y devuelve el resultado.
 
     Args:
@@ -11,7 +11,7 @@ def multiplicar(primer_valor, segundo_valor):
 
     Returns:
         float: Resultado de la multiplicación.
-    """
+    '''
     return primer_valor * segundo_valor
 
 if __name__ == '__main__':
