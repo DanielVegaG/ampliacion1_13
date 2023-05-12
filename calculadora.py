@@ -1,7 +1,7 @@
 import sys
 
 """
-Este módulo contiene funciones para realizar operaciones de multiplicación.
+Este módulo contiene funciones para realizar operaciones de multiplicación
 """
 
 def multiplicar(primer_valor, segundo_valor):
